@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Study Log</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+KR:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">&lt;Study Log/&gt;</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="languages.html">Languages</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="security.html">Security</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <div class="hero-bg-animation"></div>
+        <div class="hero-content">
+            <p class="hero-greeting">Hello, World!</p>
+            <h1 class="hero-title">My <span class="accent">Study</span> Log</h1>
+            <div class="hero-typing">
+                <span class="typing-text" id="typing-text"></span><span class="cursor">|</span>
+            </div>
+            <p class="hero-desc">학생으로서 공부해 온 것들을 정리한 페이지입니다</p>
+            <div class="hero-buttons">
+                <a href="projects.html" class="btn btn-primary">프로젝트 보기</a>
+                <a href="security.html" class="btn btn-outline">보안 / CTF</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 My Study Log.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

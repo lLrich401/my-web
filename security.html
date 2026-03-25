@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security - My Study Log</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+KR:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="navbar" class="scrolled">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">&lt;Study Log/&gt;</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="languages.html">Languages</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="security.html" class="active">Security</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section id="security" class="page-section">
+        <div class="container">
+            <h2 class="section-title">보안 & CTF</h2>
+            <p class="section-subtitle">이론 공부와 CTF 실전을 병행하고 있습니다</p>
+
+            <div class="security-grid">
+                <div class="security-card" data-topic="crypto">
+                    <div class="security-icon">
+                        <svg viewBox="0 0 64 64" width="48" height="48">
+                            <rect x="4" y="28" width="24" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <rect x="36" y="28" width="24" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <line x1="28" y1="36" x2="36" y2="36" stroke="currentColor" stroke-width="2"/>
+                            <text x="10" y="40" font-size="10" fill="currentColor" font-family="monospace">AB</text>
+                            <text x="42" y="40" font-size="10" fill="currentColor" font-family="monospace">##</text>
+                            <path d="M16 28V20a16 16 0 0 1 32 0v8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4,2"/>
+                        </svg>
+                    </div>
+                    <h3>암호학</h3>
+                    <h4>Crypto 분야를 중심으로 실전 암호 분석을 하고 있습니다</h4>
+                    <ul class="security-list">
+                        <li>
+                            <strong>RSA 공격</strong>
+                            <p>Partial bit exposure 취약점을 이용한 RSA 소인수분해 (LSB→MSB BFS 탐색) 문제를 풀었습니다.</p>
+                        </li>
+                        <li>
+                            <strong>타원곡선 암호 (ECC)</strong>
+                            <p>초특이 곡선 위 ECDLP를 Pohlig-Hellman + BSGS 알고리즘으로 풀었습니다.</p>
+                        </li>
+                        <li>
+                            <strong>블록 암호 분석</strong>
+                            <p>AES, DES 등 대칭키 암호 구조를 이해하고, XOR 기반 GF(2)^256 선형 시스템을 가우스 소거법으로 풀었습니다.</p>
+                        </li>
+                        <li>
+                            <strong>해시 & 전자서명</strong>
+                            <p>SHA-256, MD5 등의 해시 함수와 전자서명/인증서의 동작 원리를 이해하고 있습니다.</p>
+                        </li>
+                        <li>
+                            <strong>암호 분석 기법</strong>
+                            <p>Coppersmith 방법(소근 탐색), LCG/ICG 분석 등 고급 암호분석 기법을 공부하고 있습니다.</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="security-card" data-topic="hacking">
+                    <div class="security-icon">
+                        <svg viewBox="0 0 64 64" width="48" height="48">
+                            <rect x="8" y="24" width="48" height="32" rx="4" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <path d="M20 24V16a12 12 0 0 1 24 0v8" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="32" cy="40" r="4" fill="currentColor"/>
+                            <line x1="32" y1="44" x2="32" y2="50" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>리버싱 & 해킹</h3>
+                    <h4>바이너리 분석과 웹 취약점을 CTF를 통해 실습합니다</h4>
+                    <ul class="security-list">
+                        <li>
+                            <strong>리버스 엔지니어링</strong>
+                            <p>.NET 바이너리의 IL 코드를 수동으로 파싱해 플래그를 추출하고, ARX 블록 암호(Speck 계열)를 역분석한 경험이 있습니다.</p>
+                        </li>
+                        <li>
+                            <strong>웹 취약점</strong>
+                            <p>XSS, SQL Injection, CSRF 등 주요 웹 취약점의 원리와 방어 기법을 이해하고 있습니다.</p>
+                        </li>
+                        <li>
+                            <strong>네트워크 스캐닝</strong>
+                            <p>Nmap을 이용한 포트 스캔, Wireshark를 이용한 패킷 분석 등 네트워크 보안 도구를 다룰 수 있습니다.</p>
+                        </li>
+                        <li>
+                            <strong>사회공학</strong>
+                            <p>피싱 등 사회공학적 공격의 원리와 대응 방안을 이해하고 있습니다.</p>
+                        </li>
+                        <li>
+                            <strong>CTF 실전</strong>
+                            <p>드림핵 사이트에 올라온 문제나 이미 대회에서 출제가 되었던 Crypto, Reversing 분야 문제를 풀고 있습니다.</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="security-card" data-topic="network">
+                    <div class="security-icon">
+                        <svg viewBox="0 0 64 64" width="48" height="48">
+                            <circle cx="32" cy="12" r="6" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="12" cy="48" r="6" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="52" cy="48" r="6" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <line x1="28" y1="17" x2="16" y2="43" stroke="currentColor" stroke-width="2"/>
+                            <line x1="36" y1="17" x2="48" y2="43" stroke="currentColor" stroke-width="2"/>
+                            <line x1="18" y1="48" x2="46" y2="48" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>네트워크</h3>
+                    <h4>네트워크 기본 이론과 프로토콜을 이해하고 있습니다</h4>
+                    <ul class="security-list">
+                        <li>
+                            <strong>OSI 7계층 & TCP/IP</strong>
+                            <p>각 계층의 역할과 TCP, UDP, IP 등 핵심 프로토콜의 동작 방식을 이해하고 있습니다.</p>
+                        </li>
+                        <li>
+                            <strong>DNS, DHCP, HTTP/HTTPS</strong>
+                            <p>응용 계층 프로토콜의 구조와 동작 원리를 파악하고 있습니다.</p>
+                        </li>
+                        <li>
+                            <strong>서브넷팅 & 라우팅</strong>
+                            <p>IP 주소 체계, 서브넷 분할, 기본적인 라우팅 개념을 이해하고 있습니다.</p>
+                        </li>
+                        <li>
+                            <strong>패킷 분석</strong>
+                            <p>Wireshark로 실제 패킷을 캡처하고 분석하는 실습 경험이 있습니다.</p>
+                        </li>
+                        <li>
+                            <strong>VPN & 터널링</strong>
+                            <p>Tailscale을 활용해 개인 프로젝트에서 기기 간 보안 통신을 직접 구축했습니다.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 My Study Log.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

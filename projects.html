@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - My Study Log</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+KR:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="navbar" class="scrolled">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">&lt;Study Log/&gt;</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="languages.html">Languages</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="security.html">Security</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section id="projects" class="page-section">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <p class="section-subtitle">직접 설계하고 구현한 프로젝트들입니다</p>
+
+            <div class="project-list">
+
+                <!-- Project 1: AI Assistant -->
+                <div class="project-card featured">
+                    <div class="project-badge">Featured</div>
+                    <div class="project-header">
+                        <div class="project-icon">&#129302;</div>
+                        <div>
+                            <h3>AI Smart Assistant</h3>
+                            <span class="project-status status-progress">진행 중</span>
+                        </div>
+                    </div>
+                    <p class="project-desc">
+                        Raspberry Pi 4에 터치스크린, 카메라, 마이크, 스피커를 연결하고 데스크탑 PC(RTX 4060)에서 LLM 추론을 오프로딩하는 물리적 AI 어시스턴트입니다. Tailscale VPN으로 기기 간 보안 통신을 구축했습니다.
+                    </p>
+                    <div class="project-architecture">
+                        <h4>시스템 구성</h4>
+                        <div class="arch-flow">
+                            <div class="arch-node">
+                                <span class="arch-label">Raspberry Pi 4</span>
+                                <span class="arch-detail">Touchscreen · Camera · Microphone · Speaker</span>
+                            </div>
+                            <div class="arch-arrow">
+                                <svg width="40" height="24" viewBox="0 0 40 24">
+                                    <line x1="0" y1="12" x2="32" y2="12" stroke="currentColor" stroke-width="2"/>
+                                    <polygon points="32,6 40,12 32,18" fill="currentColor"/>
+                                </svg>
+                                <span>Tailscale VPN</span>
+                            </div>
+                            <div class="arch-node">
+                                <span class="arch-label">Desktop PC</span>
+                                <span class="arch-detail">i5 12th · RTX 4060 · Ollama</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">Whisper STT</span>
+                        <span class="tech-tag">Piper TTS</span>
+                        <span class="tech-tag">Ollama</span>
+                        <span class="tech-tag">Tailscale</span>
+                        <span class="tech-tag">Raspberry Pi</span>
+                        <span class="tech-tag">Chromium Kiosk</span>
+                    </div>
+                </div>
+
+                <!-- Project 2: CTF Writeups -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">&#128274;</div>
+                        <div>
+                            <h3>CTF Challenge Writeups</h3>
+                            <span class="project-status status-ongoing">지속 활동</span>
+                        </div>
+                    </div>
+                    <p class="project-desc">
+                        드림핵 wargame 문제 중 Crypto, Reversing등 문제를 풀고 write-up을 정리하고 있습니다.
+                    </p>
+                    <div class="ctf-highlights">
+                        <div class="ctf-item">
+                            <span class="ctf-category crypto">Crypto</span>
+                            <span class="ctf-name">RSA Partial Bit Exposure</span>
+                            <span class="ctf-method">LSB→MSB BFS prime factorization</span>
+                        </div>
+                        <div class="ctf-item">
+                            <span class="ctf-category crypto">Crypto</span>
+                            <span class="ctf-name">elliptic curve ECDLP</span>
+                            <span class="ctf-method">Pohlig-Hellman + BSGS</span>
+                        </div>
+                        <div class="ctf-item">
+                            <span class="ctf-category crypto">Crypto</span>
+                            <span class="ctf-name">XOR Disaster</span>
+                            <span class="ctf-method">GF(2)^256 Gaussian elimination</span>
+                        </div>
+                        <div class="ctf-item">
+                            <span class="ctf-category rev">Rev</span>
+                            <span class="ctf-name">.NET IL Reversing</span>
+                            <span class="ctf-method">Manual PE/Metadata Parsing</span>
+                        </div>
+                        <div class="ctf-item">
+                            <span class="ctf-category rev">Rev</span>
+                            <span class="ctf-name">ARX ​​block cipher</span>
+                            <span class="ctf-method">Speck-based binary reverse engineering</span>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">SageMath</span>
+                        <span class="tech-tag">Z3</span>
+                        <span class="tech-tag">Ghidra</span>
+                    </div>
+                </div>
+
+                <!-- Project 3: Hardware/IoT -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">&#128268;</div>
+                        <div>
+                            <h3>Hardware & IoT Experiments</h3>
+                            <span class="project-status status-ongoing">개발 진행 중</span>
+                        </div>
+                    </div>
+                    <p class="project-desc">
+                        Raspberry Pi를 중심으로 GPIO, 센서, 디스플레이, AI 가속기를 연결하며 임베디드 시스템을 탐구하고 있습니다.
+                    </p>
+                    <ul class="project-highlights">
+                        <li>DHT11(온습도), HC-SR04(초음파), PIR(동작감지), MQ(가스) 센서 연동</li>
+                        <li>터치스크린 설정 (dtoverlay, tslib 캘리브레이션, squeekboard 한글 레이아웃)</li>
+                        <li>Google Coral Edge TPU USB 가속기 연동 시도 (libedgetpu/tflite 호환성 디버깅)</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span class="tech-tag">Raspberry Pi 4</span>
+                        <span class="tech-tag">GPIO</span>
+                        <span class="tech-tag">Edge TPU</span>
+                        <span class="tech-tag">Linux</span>
+                        <span class="tech-tag">Debian</span>
+                    </div>
+                </div>
+
+                <!-- Project 4: This Portfolio -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">&#127760;</div>
+                        <div>
+                            <h3>포트폴리오 웹사이트</h3>
+                            <span class="project-status status-done">완료</span>
+                        </div>
+                    </div>
+                    <p class="project-desc">
+                        지금 보고 있는 이 사이트입니다. 프레임워크 없이 순수 HTML, CSS, JS로 만들었습니다.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 My Study Log.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

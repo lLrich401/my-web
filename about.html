@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - My Study Log</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+KR:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="navbar" class="scrolled">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">&lt;Study Log/&gt;</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="languages.html">Languages</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="security.html">Security</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section id="about" class="page-section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p class="section-subtitle">학생으로서 공부해 온 것들을 정리한 페이지입니다</p>
+            <div class="about-grid">
+                <div class="about-card visible">
+                    <div class="about-icon">&#128274;</div>
+                    <h3>보안 & CTF</h3>
+                    <p>드림핵 사이트에서 암호학, 리버싱, 웹 문제를 직접 풀며 실전 보안 역량을 키우고 있습니다. RSA, 타원곡선, 블록 암호 분석 등을 풀어보았습니다.</p>
+                </div>
+                <div class="about-card visible">
+                    <div class="about-icon">&#129302;</div>
+                    <h3>임베디드 & IoT</h3>
+                    <p>Raspberry Pi에 터치스크린, 카메라, 센서를 연결하고 Edge TPU까지 붙여보며 물리적인 것과 소프트웨어를 연결하는 작업을 해보았습니다.</p>
+                </div>
+                <div class="about-card visible">
+                    <div class="about-icon">&#129504;</div>
+                    <h3>AI & 자동화</h3>
+                    <p>Whisper STT, TTS, LLM을 조합해 한국어 AI 어시스턴트를 직접 구축하고 있습니다. 로컬 GPU 오프로딩과 VPN 연동까지 설계했습니다. 또 직접 SLM을 설계해 나만의 ai를 만들어보았습니다</p>
+                </div>
+                <div class="about-card visible">
+                    <div class="about-icon">&#127760;</div>
+                    <h3>웹 개발</h3>
+                    <p>프론트엔드부터 백엔드까지 직접 만져보며 배우고 있습니다. 이 포트폴리오 사이트도 직접 코딩한 결과물입니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 My Study Log.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Languages - My Study Log</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+KR:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="navbar" class="scrolled">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">&lt;Study Log/&gt;</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="languages.html" class="active">Languages</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="security.html">Security</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section id="languages" class="page-section">
+        <div class="container">
+            <h2 class="section-title">Programming Languages</h2>
+            <p class="section-subtitle">실제 프로젝트와 문제 풀이에 활용해 본 언어들입니다</p>
+
+            <div class="lang-grid">
+                <div class="lang-card" data-lang="python">
+                    <div class="lang-header">
+                        <div class="lang-icon python-bg"><span>Py</span></div>
+                        <div>
+                            <h3>Python</h3>
+                            <span class="lang-level level-active">프로젝트 활용</span>
+                        </div>
+                    </div>
+                    <div class="lang-tags">
+                        <span class="tag">CTF Solver</span>
+                        <span class="tag">war game</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">Automation</span>
+                    </div>
+                    <p class="lang-desc">워게임 암호학 문제 솔브 코드 작성, Flask 기반 AI 어시스턴트 서버 구축, 자동화 스크립트 등 실전에서 가장 많이 사용했었습니다.</p>
+                    <div class="lang-bar">
+                        <div class="lang-progress" data-width="85"></div>
+                    </div>
+                </div>
+
+                <div class="lang-card" data-lang="javascript">
+                    <div class="lang-header">
+                        <div class="lang-icon js-bg"><span>JS</span></div>
+                        <div>
+                            <h3>JavaScript</h3>
+                            <span class="lang-level level-active">프로젝트 활용</span>
+                        </div>
+                    </div>
+                    <div class="lang-tags">
+                        <span class="tag">DOM</span>
+                        <span class="tag">Async</span>
+                        <span class="tag">Puppeteer</span>
+                    </div>
+                    <p class="lang-desc">이 포트폴리오 사이트의 인터랙션 구현, Puppeteer로 웹 QA 자동화 테스트 등에 활용했습니다.</p>
+                    <div class="lang-bar">
+                        <div class="lang-progress" data-width="80"></div>
+                    </div>
+                </div>
+
+                <div class="lang-card" data-lang="java">
+                    <div class="lang-header">
+                        <div class="lang-icon java-bg"><span>Ja</span></div>
+                        <div>
+                            <h3>Java</h3>
+                            <span class="lang-level level-active">프로젝트 활용</span>
+                        </div>
+                    </div>
+                    <div class="lang-tags">
+                        <span class="tag">OOP</span>
+                        <span class="tag">Class</span>
+                        <span class="tag">Inheritance</span>
+                    </div>
+                    <p class="lang-desc">객체지향 프로그래밍의 핵심 개념(클래스, 상속, 다형성)을 Java를 통해 익혀 java를 이용해 서비스 구축 및 활용과 판매도 해보았습니다.</p>
+                    <div class="lang-bar">
+                        <div class="lang-progress" data-width="75"></div>
+                    </div>
+                </div>
+
+                <div class="lang-card" data-lang="typescript">
+                    <div class="lang-header">
+                        <div class="lang-icon ts-bg"><span>TS</span></div>
+                        <div>
+                            <h3>TypeScript</h3>
+                            <span class="lang-level level-active">프로젝트 활용</span>
+                        </div>
+                    </div>
+                    <div class="lang-tags">
+                        <span class="tag">Type Safety</span>
+                        <span class="tag">Interface</span>
+                        <span class="tag">Generics</span>
+                    </div>
+                    <p class="lang-desc">JavaScript 프로젝트에 타입 안전성을 더하는 방법을 익히고 있습니다.</p>
+                    <div class="lang-bar">
+                        <div class="lang-progress" data-width="70"></div>
+                    </div>
+                </div>
+
+                <div class="lang-card" data-lang="php">
+                    <div class="lang-header">
+                        <div class="lang-icon php-bg"><span>PHP</span></div>
+                        <div>
+                            <h3>PHP / SQL</h3>
+                            <span class="lang-level level-active">프로젝트 활용</span>
+                        </div>
+                    </div>
+                    <div class="lang-tags">
+                        <span class="tag">Backend</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">CRUD</span>
+                    </div>
+                    <p class="lang-desc">서버 사이드 동작 원리를 이해하고, 데이터베이스 CRUD 쿼리를 직접 작성할 수 있습니다.</p>
+                    <div class="lang-bar">
+                        <div class="lang-progress" data-width="65"></div>
+                    </div>
+                </div>
+
+                <div class="lang-card" data-lang="go">
+                    <div class="lang-header">
+                        <div class="lang-icon go-bg"><span>Go</span></div>
+                        <div>
+                            <h3>Go</h3>
+                            <span class="lang-level level-learning">학습 중</span>
+                        </div>
+                    </div>
+                    <div class="lang-tags">
+                        <span class="tag">Goroutine</span>
+                        <span class="tag">Channel</span>
+                        <span class="tag">CLI</span>
+                    </div>
+                    <p class="lang-desc">간결한 문법과 고루틴 기반 동시성 처리를 익히고 있습니다.</p>
+                    <div class="lang-bar">
+                        <div class="lang-progress" data-width="60"></div>
+                    </div>
+                </div>
+
+                <div class="lang-card" data-lang="rust">
+                    <div class="lang-header">
+                        <div class="lang-icon rust-bg"><span>Rs</span></div>
+                        <div>
+                            <h3>Rust</h3>
+                            <span class="lang-level level-learning">학습 중</span>
+                        </div>
+                    </div>
+                    <div class="lang-tags">
+                        <span class="tag">Ownership</span>
+                        <span class="tag">Borrow</span>
+                        <span class="tag">Memory Safety</span>
+                    </div>
+                    <p class="lang-desc">소유권, 빌림 등 Rust 고유의 메모리 안전 모델을 공부하고 있습니다.</p>
+                    <div class="lang-bar">
+                        <div class="lang-progress" data-width="55"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 My Study Log.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
